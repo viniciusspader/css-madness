@@ -1,8 +1,8 @@
 CssMadness::Application.routes.draw do
 
-  root to: 'static_pages#home_bootstrap'
+  devise_for :users
 
-  match '/static_pages' => 'static_pages#home_foundation'
+  root to: 'static_pages#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
