@@ -1,4 +1,9 @@
 CssMadness::Application.routes.draw do
+
+  root to: 'static_pages#home_bootstrap'
+
+  match '/static_pages' => 'static_pages#home_foundation'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
